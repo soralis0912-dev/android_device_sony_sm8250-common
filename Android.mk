@@ -63,6 +63,8 @@ $(BDWLAN_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
 
+ALL_DEFAULT_INSTALLED_MODULES += $(BDWLAN_SYMLINK)
+
 REGDB_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/qca6390/regdb.bin
 $(REGDB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@echo "regdb link: $@"
