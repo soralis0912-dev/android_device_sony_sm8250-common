@@ -825,6 +825,13 @@ vendor/lib64/unnhal-acc-hvx.so
 # NFC Firmware
 vendor/lib64/libpn557_fw.so
 
+# SecureElement
+vendor/bin/hw/android.hardware.secure_element@1.2-service
+vendor/etc/init/android.hardware.secure_element@1.2-service.rc
+system/lib64/android.hardware.secure_element@1.0.so
+system/lib/android.hardware.secure_element@1.0.so
+system/lib/android.hardware.secure_element@1.1.so
+system/lib/android.hardware.secure_element@1.2.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
