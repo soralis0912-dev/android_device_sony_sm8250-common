@@ -840,8 +840,10 @@ vendor/lib/ls_client.so
 # NFC
 vendor/lib/vendor.nxp.nxpnfc@2.0.so
 vendor/lib/vendor.nxp.eventprocessor@1.0.so
+vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so
 vendor/lib64/vendor.nxp.nxpnfc@2.0.so
 vendor/lib64/vendor.nxp.eventprocessor@1.0.so
+vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
