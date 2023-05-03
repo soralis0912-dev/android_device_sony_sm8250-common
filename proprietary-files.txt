@@ -566,6 +566,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 # Charger
 vendor/bin/hw/vendor.semc.hardware.charger@1.0-service
 vendor/etc/init/vendor.semc.hardware.charger@1.0-service.rc
+vendor/lib64/vendor.semc.hardware.charger@1.0.so
 
 # CNE
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
@@ -716,6 +717,9 @@ vendor/bin/hw/vendor.semc.hardware.display@2.2-service
 vendor/etc/init/vendor.semc.hardware.display@2.2-service.rc
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
+vendor/lib64/vendor.semc.hardware.display@2.0.so
+vendor/lib64/vendor.semc.hardware.display@2.1.so
+vendor/lib64/vendor.semc.hardware.display@2.2.so
 
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
@@ -1187,6 +1191,29 @@ vendor/lib64/unnhal-acc-hvx.so
 # NFC Firmware
 vendor/lib64/libpn557_fw.so
 
+# SecureElement
+vendor/bin/hw/android.hardware.secure_element@1.2-service
+vendor/etc/init/android.hardware.secure_element@1.2-service.rc
+system/lib64/android.hardware.secure_element@1.0.so
+system/lib64/android.hardware.secure_element@1.1.so
+system/lib64/android.hardware.secure_element@1.2.so
+vendor/lib64/ls_client.so
+vendor/lib64/ese_client.so
+vendor/lib64/ese_spi_nxp.so
+system/lib/android.hardware.secure_element@1.0.so
+system/lib/android.hardware.secure_element@1.1.so
+system/lib/android.hardware.secure_element@1.2.so
+vendor/lib/ls_client.so
+vendor/lib/ese_client.so
+vendor/lib64/ese_spi_nxp.so
+
+# NFC
+vendor/lib/vendor.nxp.nxpnfc@2.0.so
+vendor/lib/vendor.nxp.eventprocessor@1.0.so
+vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so
+vendor/lib64/vendor.nxp.nxpnfc@2.0.so
+vendor/lib64/vendor.nxp.eventprocessor@1.0.so
+vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
@@ -1774,7 +1801,6 @@ system/framework/WfdCommon.jar|da807ef11346e38e3d9058e655b3a565f3e2a32d
 system_ext/bin/wfdservice|fc204600629fbf60c4c6c187f0943d21643fdb4a
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
-system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|5596408c11c7021ba91b00efc635270d01a36f15
 system_ext/lib/libmmrtpdecoder.so|e15387b44fd9b3661d763d934663551ca30743d7
 system_ext/lib/libmmrtpencoder.so|dbf276471b60a706d76e12edde388ef887b27396
@@ -1886,3 +1912,29 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 # SIM control
 odm/bin/sony_ext_uim_ctrl
 odm/etc/init/sony_ext_uim_ctrl.rc
+
+# SEMC library
+system/framework/com.sony.device.jar
+product/framework/com.sonyericsson.idd_impl.jar
+system_ext/framework/com.sonymobile.securedatamanager_impl.jar
+system/etc/permissions/com.sony.device.xml
+product/etc/permissions/com.sonyericsson.idd.xml
+system_ext/etc/permissions/com.sonymobile.securedatamanager.xml
+product/etc/permissions/privapp-permissions-product.xml
+system/etc/permissions/privapp-permissions-sony.xml
+system_ext/etc/permissions/privapp-permissions-system-ext.xml
+
+# SEMC Camera
+system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk
+product/app/CameraAddonPermission/CameraAddonPermission.apk;PRESIGNED
+product/app/CameraCommonPermission/CameraCommonPermission.apk;PRESIGNED
+product/priv-app/CameraCommon/CameraCommon.apk;PRESIGNED
+product/priv-app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk;PRESIGNED
+product/priv-app/SomcPhotoPro-xxhdpi-release/SomcPhotoPro-xxhdpi-release.apk;PRESIGNED
+product/app/SomcCinemaPro-xxhdpi-release/SomcCinemaPro-xxhdpi-release.apk;PRESIGNED
+product/priv-app/CameraPanorama-release/CameraPanorama-release.apk;PRESIGNED
+product/priv-app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addoncamera.portraitselfie.apk;PRESIGNED
+
+# SEMC Music
+system_ext/priv-app/SemcMusic/SemcMusic.apk;PRESIGNED
+system_ext/etc/permissions/privapp-permissions-system-ext.xml
