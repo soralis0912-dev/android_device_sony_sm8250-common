@@ -1928,13 +1928,13 @@ system_ext/etc/permissions/privapp-permissions-system-ext.xml
 system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk
 product/app/CameraAddonPermission/CameraAddonPermission.apk;PRESIGNED
 product/app/CameraCommonPermission/CameraCommonPermission.apk;PRESIGNED
-product/priv-app/CameraCommon/CameraCommon.apk;PRESIGNED
-product/priv-app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk;PRESIGNED
-product/priv-app/SomcPhotoPro-xxhdpi-release/SomcPhotoPro-xxhdpi-release.apk;PRESIGNED
 product/app/SomcCinemaPro-xxhdpi-release/SomcCinemaPro-xxhdpi-release.apk;PRESIGNED
-product/priv-app/CameraPanorama-release/CameraPanorama-release.apk;PRESIGNED
-product/priv-app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addoncamera.portraitselfie.apk;PRESIGNED
+product/priv-app/CameraCommon/CameraCommon.apk:product/app/CameraCommon/CameraCommon.apk;PRESIGNED
+product/priv-app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk:product/app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk;PRESIGNED
+product/priv-app/SomcPhotoPro-xxhdpi-release/SomcPhotoPro-xxhdpi-release.apk:product/app/SomcPhotoPro-xxhdpi-release/SomcPhotoPro-xxhdpi-release.apk;PRESIGNED
+product/priv-app/CameraPanorama-release/CameraPanorama-release.apk:product/app/CameraPanorama-release/CameraPanorama-release.apk;PRESIGNED
+product/priv-app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addoncamera.portraitselfie.apk:product/app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addoncamera.portraitselfie.apk;PRESIGNED
 
 # SEMC Music
-system_ext/priv-app/SemcMusic/SemcMusic.apk;PRESIGNED
+system_ext/priv-app/SemcMusic/SemcMusic.apk:system_ext/app/SemcMusic/SemcMusic.apk;PRESIGNED
 system_ext/etc/permissions/privapp-permissions-system-ext.xml
