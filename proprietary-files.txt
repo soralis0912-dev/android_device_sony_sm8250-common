@@ -1938,3 +1938,6 @@ product/priv-app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addonc
 # SEMC Music
 system_ext/priv-app/SemcMusic/SemcMusic.apk:system_ext/app/SemcMusic/SemcMusic.apk;PRESIGNED
 system_ext/etc/permissions/privapp-permissions-system-ext.xml
+
+# External Monitor
+product/priv-app/ExtMonitorApp/ExtMonitorApp.apk:product/app/ExtMonitorApp/ExtMonitorApp.apk;PRESIGNED
