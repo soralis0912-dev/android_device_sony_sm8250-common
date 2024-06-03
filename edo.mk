@@ -21,8 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
 # VNDK
-PRODUCT_SHIPPING_API_LEVEL := 29
+BOARD_API_LEVEL := 29
+BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -463,6 +469,11 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
     android.hidl.base@1.0.vendor
+
+# Sony device library
+PRODUCT_PACKAGES += \
+    com.sony.device \
+    com.sony.idd_dummy
 
 # Telephony
 PRODUCT_PACKAGES += \
