@@ -1924,10 +1924,8 @@ odm/bin/sony_ext_uim_ctrl
 odm/etc/init/sony_ext_uim_ctrl.rc
 
 # SEMC library
-system/framework/com.sony.device.jar
 product/framework/com.sonyericsson.idd_impl.jar
 system_ext/framework/com.sonymobile.securedatamanager_impl.jar
-system/etc/permissions/com.sony.device.xml
 product/etc/permissions/com.sonyericsson.idd.xml
 system_ext/etc/permissions/com.sonymobile.securedatamanager.xml
 product/etc/permissions/privapp-permissions-product.xml
