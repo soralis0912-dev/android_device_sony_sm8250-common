@@ -530,6 +530,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
 
+# sonymobile Permission
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/sonymobile_permissions.xml:system/etc/permissions/sonymobile_permissions.xml
+
 # XperiaParts
 PRODUCT_PACKAGES += \
     XperiaParts
